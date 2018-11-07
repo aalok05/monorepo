@@ -12,6 +12,7 @@ const StaticCall = artifacts.require("StaticCall");
 const Transfer = artifacts.require("Transfer");
 const VirtualAppAgreement = artifacts.require("VirtualAppAgreement");
 const ETHBalanceRefundApp = artifacts.require("ETHBalanceRefundApp");
+const FixedResolutionApp = artifacts.require("FixedResolutionApp");
 
 module.exports = (deployer, network) => {
   deployer.then(async () => {
@@ -34,6 +35,7 @@ module.exports = (deployer, network) => {
       ProxyFactory,
       Registry,
       Signatures,
+      FixedResolutionApp,
       // FIXME: This doesn't need to be deployed, but eth-gas-reporter breaks
       // if it isn't deployed.
       Conditional
