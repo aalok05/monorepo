@@ -28,7 +28,9 @@ export class AppNavContent {
           </div>
           <app-connection />
         </div>
-        <div class="right" />
+        <div class="right">
+          <app-account />
+        </div>
       </nav>
     );
   }
