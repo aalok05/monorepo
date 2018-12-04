@@ -37,7 +37,7 @@ contract("Virtual App", (accounts: string[]) => {
       expect(virtualAppAgreement);
       expect(registry);
 
-      virtualAppAgreement.functions.delegateTarget([registry.address]);
+      await virtualAppAgreement.functions.delegateTarget([registry.address]);
     });
   });
 });
